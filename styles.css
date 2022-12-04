@@ -31,7 +31,7 @@ header{
 }
 
 header{
-    background: url("/images/image-36.png");
+    background: url("images/image-36.png");
     max-height: 35vh;
     background-size: cover;
     display: flex;
