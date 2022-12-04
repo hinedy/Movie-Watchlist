@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/movieicon.svg">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="styles.css">
+        <title>Movie Watchlist</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="header-title">Find your film</h1>
+                <a class="page-nav" href="/watchlist.html"><h3 >My Watchlist</h3></a>
+            </div>
+
+        </header>
+        <main>
+            <form class="search-bar" id="form">
+                <input class="search-input" id="search-input" type="search" placeholder="Search for a movie">
+                <button class="search-btn">Search</button> 
+            </form>
+            <section class="movies-container" id="movies-container">
+
+                <!-- no results - NO DATA STATE -->
+                <!-- <div class="body-wrapper">
+                    <h2 class="no-data">Unable to find what you&#39;re looking for. Please try another search.</h2>
+                </div> -->
+                
+                
+                <!-- unpopulated state - pre-search state -->
+                <!-- <div class="explore-icon" >
+                    <img src="images/explore-icon.png" >
+                </div>
+                <h2 class="explore-title">Start Exploring</h2> -->
+                
+                <!-- ************************************** -->
+                <!-- display search result -->
+<!--                 
+
+                    <div class="movie">
+                        <div class="movie-poster">
+                            <img src="images/heat-poster.jpg"  alt="movie-poster"> 
+                        </div>
+                        <div class="movie-body">
+                            <div class="movie-data">
+                                <h2 class="movie-title">Heat</h2>
+                                <p class="movie-rating">⭐ 8.0</p>
+                            </div>
+                            <div class="movie-details">
+                                <p class="movie-runtime">156 min</p>
+                                <p class="movie-genres">drama, action, heist</p>
+                                <button class="add-remove-btn">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM9 5C9 4.44772 8.55228 4 8 4C7.44772 4 7 4.44772 7 5V7H5C4.44772 7 4 7.44771 4 8C4 8.55228 4.44772 9 5 9H7V11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11V9H11C11.5523 9 12 8.55228 12 8C12 7.44772 11.5523 7 11 7H9V5Z" fill="white"/>
+                                    </svg>
+                                    Watchlist
+                                </button>
+                            </div>
+                            <p class="movie-description">
+                                A group of high-end professional thieves start to
+                                feel the heat from the LAPD when they unknowingly 
+                                leave a clue at their latest heist.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <div class="movie">
+                        <div class="movie-poster">
+                            <img src="images/heat-poster.jpg"  alt="movie-poster"> 
+                        </div>
+                        <div class="movie-body">
+                            <div class="movie-data">
+                                <h2 class="movie-title">Heat</h2>
+                                <p class="movie-rating">⭐ 8.0</p>
+                            </div>
+                            <div class="movie-details">
+                                <p class="movie-runtime">156 min</p>
+                                <p class="movie-genres">drama, action, heist</p>
+                                <button class="add-remove-btn">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM9 5C9 4.44772 8.55228 4 8 4C7.44772 4 7 4.44772 7 5V7H5C4.44772 7 4 7.44771 4 8C4 8.55228 4.44772 9 5 9H7V11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11V9H11C11.5523 9 12 8.55228 12 8C12 7.44772 11.5523 7 11 7H9V5Z" fill="white"/>
+                                    </svg>
+                                    Watchlist
+                                </button>
+                            </div>
+                            <p class="movie-description">
+                                A group of high-end professional thieves start to
+                                feel the heat from the LAPD when they unknowingly 
+                                leave a clue at their latest heist.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <div class="movie">
+                        <div class="movie-poster">
+                            <img src="images/heat-poster.jpg"  alt="movie-poster"> 
+                        </div>
+                        <div class="movie-body">
+                            <div class="movie-data">
+                                <h2 class="movie-title">Heat</h2>
+                                <p class="movie-rating">⭐ 8.0</p>
+                            </div>
+                            <div class="movie-details">
+                                <p class="movie-runtime">156 min</p>
+                                <p class="movie-genres">drama, action, heist</p>
+                                <button class="add-remove-btn">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM9 5C9 4.44772 8.55228 4 8 4C7.44772 4 7 4.44772 7 5V7H5C4.44772 7 4 7.44771 4 8C4 8.55228 4.44772 9 5 9H7V11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11V9H11C11.5523 9 12 8.55228 12 8C12 7.44772 11.5523 7 11 7H9V5Z" fill="white"/>
+                                    </svg>
+                                    Watchlist
+                                </button>
+                            </div>
+                            <p class="movie-description">
+                                A group of high-end professional thieves start to
+                                feel the heat from the LAPD when they unknowingly 
+                                leave a clue at their latest heist.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                 -->
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+
+</html>
